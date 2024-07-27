@@ -13,6 +13,7 @@ def talk(text):
     engine.say(text)
     engine.runAndWait()
 def take_command():
+    command = ""
     try:
        with sr.Microphone() as source:
             print ('listening...')
